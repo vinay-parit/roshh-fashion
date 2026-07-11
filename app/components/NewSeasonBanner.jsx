@@ -10,6 +10,7 @@ export default function NewSeasonBanner() {
       style={{
         background: "var(--color-off-white)",
         overflow: "hidden",
+        flex: 1,
       }}
     >
       <div
@@ -18,7 +19,7 @@ export default function NewSeasonBanner() {
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
           gap: 0,
-          minHeight: "600px",
+          height: "100%",
           alignItems: "center",
         }}
       >

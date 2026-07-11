@@ -9,8 +9,10 @@ export default function Home() {
     <>
       <HeroSection />
       <CategoryGrid />
-      <NewSeasonBanner />
-      <TrustBadges />
+      <div style={{ height: "100vh", display: "flex", flexDirection: "column" }}>
+        <NewSeasonBanner />
+        <TrustBadges />
+      </div>
       <FeaturedProducts />
     </>
   );

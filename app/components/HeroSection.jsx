@@ -139,8 +139,8 @@ export default function HeroSection() {
             style={{
               background: "var(--color-black)",
               color: "var(--color-white)",
-              padding: "16px 32px",
-              fontSize: "11px",
+              padding: "12px 24px",
+              fontSize: "10px",
               fontWeight: 600,
               letterSpacing: "0.15em",
               textDecoration: "none",
@@ -199,7 +199,7 @@ export default function HeroSection() {
             <br />
             COLLECTION
             <br />
-            2024
+            2026
           </p>
           <div style={{ width: "30px", height: "1px", background: "var(--color-black)", marginTop: "12px" }}></div>
         </motion.div>

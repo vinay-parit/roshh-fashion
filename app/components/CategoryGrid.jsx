@@ -3,29 +3,23 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ChevronRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const categories = [
   {
     title: "MEN",
-    description: "Elevated everyday essentials.",
     image: "/images/cat-men.png",
     link: "/products?category=men",
-    cta: "SHOP MEN",
   },
   {
     title: "WOMEN",
-    description: "Effortless style for every you.",
     image: "/images/cat-women.png",
     link: "/products?category=women",
-    cta: "SHOP WOMEN",
   },
   {
     title: "KIDS",
-    description: "Comfort meets cool everyday.",
     image: "/images/cat-kids.png",
     link: "/products?category=kids",
-    cta: "SHOP KIDS",
   },
 ];
 
@@ -33,123 +27,134 @@ const containerVariants = {
   hidden: {},
   visible: {
     transition: {
-      staggerChildren: 0.15,
+      staggerChildren: 0.2,
     },
   },
 };
 
 const cardVariants = {
-  hidden: { opacity: 0, y: 24 },
+  hidden: { opacity: 0, y: 40 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: "easeOut" },
+    transition: { duration: 0.8, ease: "easeOut" },
   },
 };
 
 export default function CategoryGrid() {
   return (
     <section
-      className="section-spacing"
-      style={{ background: "var(--color-white)" }}
+      style={{
+        background: "var(--color-charcoal)",
+        padding: "var(--space-8) 0",
+      }}
     >
       <motion.div
         className="container-wide"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
+        viewport={{ once: true, margin: "0px" }}
       >
+        <div style={{ textAlign: "center", marginBottom: "var(--space-6)" }}>
+          <h2 style={{ color: "var(--color-white)", fontSize: "clamp(32px, 4vw, 48px)", fontWeight: 700, margin: 0, letterSpacing: "-0.02em" }}>
+            EXPLORE COLLECTIONS
+          </h2>
+        </div>
+
         <div
           style={{
             display: "grid",
             gridTemplateColumns: "repeat(3, 1fr)",
-            gap: "var(--space-5)",
+            gap: "var(--space-4)",
           }}
           className="category-grid"
         >
           {categories.map((cat) => (
-            <motion.div key={cat.title} variants={cardVariants}>
+            <motion.div key={cat.title} variants={cardVariants} style={{ height: "100%" }}>
               <Link
                 href={cat.link}
+                className="category-card"
                 style={{
                   display: "block",
-                  background: "var(--color-light-gray)",
+                  position: "relative",
                   borderRadius: "var(--radius-lg)",
                   overflow: "hidden",
                   textDecoration: "none",
-                  color: "var(--color-black)",
-                  transition: "transform 450ms ease-out, box-shadow 450ms ease-out",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = "scale(1.03)";
-                  e.currentTarget.style.boxShadow = "var(--shadow-md)";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = "scale(1)";
-                  e.currentTarget.style.boxShadow = "none";
+                  height: "500px",
+                  width: "100%",
                 }}
               >
+                {/* Image Container */}
                 <div
+                  className="image-wrapper"
                   style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "var(--space-4)",
-                    padding: "var(--space-4)",
+                    position: "absolute",
+                    inset: 0,
+                    transition: "transform 700ms cubic-bezier(0.25, 0.46, 0.45, 0.94)",
                   }}
                 >
-                  {/* Category Image */}
-                  <div
+                  <Image
+                    src={cat.image}
+                    alt={cat.title}
+                    fill
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+
+                {/* Overlay Gradient */}
+                <div
+                  style={{
+                    position: "absolute",
+                    inset: 0,
+                    background: "linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 50%)",
+                    zIndex: 1,
+                    transition: "opacity 500ms ease",
+                  }}
+                  className="overlay"
+                />
+
+                {/* Content */}
+                <div
+                  style={{
+                    position: "absolute",
+                    bottom: 0,
+                    left: 0,
+                    width: "100%",
+                    padding: "var(--space-5)",
+                    zIndex: 2,
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "flex-end",
+                  }}
+                >
+                  <h3
                     style={{
-                      width: "100px",
-                      height: "100px",
-                      borderRadius: "var(--radius-lg)",
-                      overflow: "hidden",
-                      flexShrink: 0,
-                      position: "relative",
+                      color: "var(--color-white)",
+                      margin: 0,
+                      fontSize: "clamp(24px, 3vw, 36px)",
+                      fontWeight: 600,
+                      letterSpacing: "0.05em",
                     }}
                   >
-                    <Image
-                      src={cat.image}
-                      alt={cat.title}
-                      fill
-                      style={{ objectFit: "cover" }}
-                    />
-                  </div>
-
-                  {/* Category Info */}
-                  <div style={{ flex: 1 }}>
-                    <h3
-                      className="text-h3"
-                      style={{
-                        margin: "0 0 6px 0",
-                        fontWeight: 600,
-                      }}
-                    >
-                      {cat.title}
-                    </h3>
-                    <p
-                      className="text-body-sm"
-                      style={{
-                        color: "var(--color-stone)",
-                        margin: "0 0 12px 0",
-                      }}
-                    >
-                      {cat.description}
-                    </p>
-                    <span
-                      className="text-label"
-                      style={{
-                        display: "inline-flex",
-                        alignItems: "center",
-                        gap: "4px",
-                        fontSize: "11px",
-                        color: "var(--color-black)",
-                      }}
-                    >
-                      {cat.cta}{" "}
-                      <ChevronRight size={14} strokeWidth={1.5} />
-                    </span>
+                    {cat.title}
+                  </h3>
+                  
+                  <div
+                    className="arrow-circle"
+                    style={{
+                      width: "48px",
+                      height: "48px",
+                      borderRadius: "50%",
+                      background: "var(--color-white)",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      color: "var(--color-black)",
+                      transition: "transform 500ms ease, background 500ms ease, color 500ms ease",
+                    }}
+                  >
+                    <ArrowRight size={24} strokeWidth={1.5} />
                   </div>
                 </div>
               </Link>
@@ -159,10 +164,26 @@ export default function CategoryGrid() {
       </motion.div>
 
       <style jsx global>{`
-        @media (max-width: 768px) {
+        .category-card:hover .image-wrapper {
+          transform: scale(1.08);
+        }
+        .category-card:hover .arrow-circle {
+          background: var(--color-charcoal);
+          color: var(--color-white);
+          transform: scale(1.1) rotate(-45deg);
+        }
+        @media (max-width: 900px) {
+          .category-grid {
+            grid-template-columns: 1fr 1fr !important;
+          }
+        }
+        @media (max-width: 600px) {
           .category-grid {
             grid-template-columns: 1fr !important;
-            gap: 16px !important;
+            gap: var(--space-6) !important;
+          }
+          .category-card {
+            aspect-ratio: 4/5 !important;
           }
         }
       `}</style>
