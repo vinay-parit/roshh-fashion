@@ -46,9 +46,8 @@ export default function TrustBadges() {
   return (
     <section
       style={{
-        borderTop: "var(--border-hairline)",
-        borderBottom: "var(--border-hairline)",
-        background: "var(--color-white)",
+        background: "linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%)",
+        border: "none",
       }}
     >
       <motion.div
@@ -80,7 +79,7 @@ export default function TrustBadges() {
                 width: "48px",
                 height: "48px",
                 borderRadius: "var(--radius-lg)",
-                background: "var(--color-light-gray)",
+                background: "rgba(255, 255, 255, 0.2)",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -90,7 +89,7 @@ export default function TrustBadges() {
               <badge.icon
                 size={22}
                 strokeWidth={1.5}
-                color="var(--color-black)"
+                color="var(--color-white)"
               />
             </div>
             <div>
@@ -99,7 +98,7 @@ export default function TrustBadges() {
                 style={{
                   margin: 0,
                   fontSize: "11px",
-                  color: "var(--color-black)",
+                  color: "var(--color-white)",
                 }}
               >
                 {badge.title}
@@ -108,7 +107,7 @@ export default function TrustBadges() {
                 className="text-body-sm"
                 style={{
                   margin: "2px 0 0 0",
-                  color: "var(--color-stone)",
+                  color: "var(--color-white)",
                   fontSize: "12px",
                 }}
               >
