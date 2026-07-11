@@ -49,8 +49,8 @@ export default function HeroSection() {
               color: "var(--color-black)",
               margin: 0,
               fontFamily: "'Inter', 'Helvetica Neue', sans-serif",
-              fontSize: "clamp(140px, 28vw, 450px)",
-              fontWeight: 800,
+              fontSize: "clamp(120px, 28vw, 450px)",
+              fontWeight: 700,
               letterSpacing: "-0.04em",
               lineHeight: 0.8,
               userSelect: "none",
@@ -75,7 +75,7 @@ export default function HeroSection() {
           className="hero-image-wrapper"
         >
           <Image
-            src="/hero-removebg-preview.png"
+            src="/Screenshot_2026-07-10_214620-removebg-preview.png"
             alt="Roshh Fashion - Premium minimal fashion"
             fill
             style={{
@@ -93,7 +93,7 @@ export default function HeroSection() {
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.5 }}
           style={{
             position: "absolute",
-            top: "15%",
+            top: "8%",
             left: "80px",
             zIndex: 3,
           }}
@@ -125,7 +125,7 @@ export default function HeroSection() {
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.7 }}
           style={{
             position: "absolute",
-            bottom: "15%",
+            bottom: "8%",
             left: "80px",
             zIndex: 3,
             display: "flex",
@@ -178,7 +178,7 @@ export default function HeroSection() {
           transition={{ duration: 0.6, delay: 0.9 }}
           style={{
             position: "absolute",
-            bottom: "15%",
+            bottom: "8%",
             right: "80px",
             textAlign: "left",
             zIndex: 3,
