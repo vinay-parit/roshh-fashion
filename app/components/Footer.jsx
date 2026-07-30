@@ -113,12 +113,13 @@ export default function Footer() {
   return (
     <footer
       style={{
-        background: "var(--color-black)",
-        color: "var(--color-white)",
+        background: "var(--color-off-white)",
+        color: "var(--color-black)",
         paddingTop: "96px",
         paddingBottom: "40px",
         position: "relative",
         overflow: "hidden",
+        borderTop: "var(--border-hairline)",
       }}
     >
       <div className="container-wide">
@@ -129,7 +130,7 @@ export default function Footer() {
             gridTemplateColumns: "1.2fr 1fr",
             gap: "48px",
             paddingBottom: "64px",
-            borderBottom: "1px solid rgba(255, 255, 255, 0.12)",
+            borderBottom: "1px solid #E4E2DE",
             marginBottom: "64px",
             alignItems: "center",
           }}
@@ -150,14 +151,14 @@ export default function Footer() {
                   width: "6px",
                   height: "6px",
                   borderRadius: "50%",
-                  backgroundColor: "var(--color-whatsapp)",
+                  backgroundColor: "var(--color-black)",
                   display: "inline-block",
                 }}
               />
               <span
                 className="text-label"
                 style={{
-                  color: "var(--color-mid-gray)",
+                  color: "var(--color-stone)",
                   fontSize: "11px",
                   letterSpacing: "0.2em",
                 }}
@@ -171,13 +172,14 @@ export default function Footer() {
                 fontWeight: 600,
                 letterSpacing: "-0.01em",
                 marginBottom: "12px",
+                color: "var(--color-black)",
               }}
             >
               Subscribe for exclusive drops & 10% off.
             </h3>
             <p
               style={{
-                color: "var(--color-mid-gray)",
+                color: "var(--color-stone)",
                 fontSize: "14px",
                 maxWidth: "480px",
                 marginBottom: "24px",
@@ -203,29 +205,29 @@ export default function Footer() {
                 required
                 style={{
                   flex: 1,
-                  background: "rgba(255, 255, 255, 0.05)",
-                  border: "1px solid rgba(255, 255, 255, 0.2)",
+                  background: "var(--color-white)",
+                  border: "1px solid #E4E2DE",
                   borderRadius: "var(--radius-full)",
                   padding: "16px 24px",
-                  color: "var(--color-white)",
+                  color: "var(--color-black)",
                   fontSize: "14px",
                   outline: "none",
-                  transition: "border-color 250ms, background 250ms",
+                  transition: "border-color 250ms, box-shadow 250ms",
                 }}
                 onFocus={(e) => {
-                  e.target.style.borderColor = "var(--color-white)";
-                  e.target.style.background = "rgba(255, 255, 255, 0.08)";
+                  e.target.style.borderColor = "var(--color-black)";
+                  e.target.style.boxShadow = "0 0 0 1px var(--color-black)";
                 }}
                 onBlur={(e) => {
-                  e.target.style.borderColor = "rgba(255, 255, 255, 0.2)";
-                  e.target.style.background = "rgba(255, 255, 255, 0.05)";
+                  e.target.style.borderColor = "#E4E2DE";
+                  e.target.style.boxShadow = "none";
                 }}
               />
               <button
                 type="submit"
                 style={{
-                  background: "var(--color-white)",
-                  color: "var(--color-black)",
+                  background: "var(--color-black)",
+                  color: "var(--color-white)",
                   border: "none",
                   borderRadius: "var(--radius-full)",
                   padding: "0 28px",
@@ -242,11 +244,11 @@ export default function Footer() {
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.transform = "scale(1.03)";
-                  e.currentTarget.style.background = "var(--color-off-white)";
+                  e.currentTarget.style.background = "var(--color-charcoal)";
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.transform = "scale(1)";
-                  e.currentTarget.style.background = "var(--color-white)";
+                  e.currentTarget.style.background = "var(--color-black)";
                 }}
               >
                 {subscribed ? (
@@ -265,14 +267,14 @@ export default function Footer() {
           {/* WhatsApp Concierge Card */}
           <div
             style={{
-              background: "rgba(255, 255, 255, 0.03)",
-              border: "1px solid rgba(255, 255, 255, 0.08)",
+              background: "var(--color-white)",
+              border: "1px solid #E4E2DE",
               borderRadius: "var(--radius-lg)",
               padding: "36px 32px",
               display: "flex",
               flexDirection: "column",
               gap: "16px",
-              backdropFilter: "blur(10px)",
+              boxShadow: "var(--shadow-sm)",
             }}
           >
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
@@ -310,7 +312,7 @@ export default function Footer() {
                 </span>
                 <span
                   className="text-label"
-                  style={{ color: "var(--color-white)", fontSize: "11px" }}
+                  style={{ color: "var(--color-black)", fontSize: "11px" }}
                 >
                   PERSONAL CONCIERGE
                 </span>
@@ -320,7 +322,7 @@ export default function Footer() {
               </span>
             </div>
 
-            <p style={{ color: "var(--color-mid-gray)", fontSize: "14px", margin: 0, lineHeight: 1.6 }}>
+            <p style={{ color: "var(--color-stone)", fontSize: "14px", margin: 0, lineHeight: 1.6 }}>
               Need styling advice or assistance with sizing? Connect directly with our fashion consultants via WhatsApp.
             </p>
 
@@ -360,7 +362,7 @@ export default function Footer() {
                 fontSize: "28px",
                 fontWeight: 700,
                 letterSpacing: "0.1em",
-                color: "var(--color-white)",
+                color: "var(--color-black)",
                 textDecoration: "none",
                 display: "inline-block",
                 marginBottom: "20px",
@@ -388,10 +390,12 @@ export default function Footer() {
                 gap: "8px",
                 padding: "8px 16px",
                 borderRadius: "var(--radius-full)",
-                border: "1px solid rgba(255, 255, 255, 0.12)",
+                border: "1px solid #E4E2DE",
+                background: "var(--color-white)",
                 fontSize: "12px",
-                color: "var(--color-mid-gray)",
+                color: "var(--color-black)",
                 cursor: "pointer",
+                boxShadow: "var(--shadow-sm)",
               }}
             >
               <Globe size={14} />
@@ -404,7 +408,7 @@ export default function Footer() {
             <h4
               className="text-label"
               style={{
-                color: "var(--color-white)",
+                color: "var(--color-black)",
                 marginBottom: "24px",
                 fontSize: "11px",
                 letterSpacing: "0.18em",
@@ -425,7 +429,7 @@ export default function Footer() {
                       display: "inline-block",
                     }}
                     onMouseEnter={(e) => {
-                      e.target.style.color = "var(--color-white)";
+                      e.target.style.color = "var(--color-black)";
                       e.target.style.transform = "translateX(4px)";
                     }}
                     onMouseLeave={(e) => {
@@ -445,7 +449,7 @@ export default function Footer() {
             <h4
               className="text-label"
               style={{
-                color: "var(--color-white)",
+                color: "var(--color-black)",
                 marginBottom: "24px",
                 fontSize: "11px",
                 letterSpacing: "0.18em",
@@ -466,7 +470,7 @@ export default function Footer() {
                       display: "inline-block",
                     }}
                     onMouseEnter={(e) => {
-                      e.target.style.color = "var(--color-white)";
+                      e.target.style.color = "var(--color-black)";
                       e.target.style.transform = "translateX(4px)";
                     }}
                     onMouseLeave={(e) => {
@@ -486,7 +490,7 @@ export default function Footer() {
             <h4
               className="text-label"
               style={{
-                color: "var(--color-white)",
+                color: "var(--color-black)",
                 marginBottom: "24px",
                 fontSize: "11px",
                 letterSpacing: "0.18em",
@@ -507,7 +511,7 @@ export default function Footer() {
                       display: "inline-block",
                     }}
                     onMouseEnter={(e) => {
-                      e.target.style.color = "var(--color-white)";
+                      e.target.style.color = "var(--color-black)";
                       e.target.style.transform = "translateX(4px)";
                     }}
                     onMouseLeave={(e) => {
@@ -527,7 +531,7 @@ export default function Footer() {
             <h4
               className="text-label"
               style={{
-                color: "var(--color-white)",
+                color: "var(--color-black)",
                 marginBottom: "24px",
                 fontSize: "11px",
                 letterSpacing: "0.18em",
@@ -553,7 +557,7 @@ export default function Footer() {
                       fontSize: "14px",
                       transition: "color 200ms ease",
                     }}
-                    onMouseEnter={(e) => (e.currentTarget.style.color = "var(--color-white)")}
+                    onMouseEnter={(e) => (e.currentTarget.style.color = "var(--color-black)")}
                     onMouseLeave={(e) => (e.currentTarget.style.color = "var(--color-stone)")}
                   >
                     <IconComponent size={16} />
@@ -582,7 +586,7 @@ export default function Footer() {
               fontSize: "clamp(80px, 16vw, 240px)",
               fontWeight: 800,
               letterSpacing: "0.15em",
-              color: "rgba(255, 255, 255, 0.03)",
+              color: "rgba(0, 0, 0, 0.04)",
               textTransform: "uppercase",
               display: "block",
             }}
@@ -598,7 +602,7 @@ export default function Footer() {
             justifyContent: "space-between",
             alignItems: "center",
             paddingTop: "32px",
-            borderTop: "1px solid rgba(255, 255, 255, 0.08)",
+            borderTop: "1px solid #E4E2DE",
             flexWrap: "wrap",
             gap: "20px",
           }}
@@ -626,7 +630,7 @@ export default function Footer() {
                     fontSize: "12px",
                     transition: "color 200ms ease",
                   }}
-                  onMouseEnter={(e) => (e.target.style.color = "var(--color-white)")}
+                  onMouseEnter={(e) => (e.target.style.color = "var(--color-black)")}
                   onMouseLeave={(e) => (e.target.style.color = "var(--color-stone)")}
                 >
                   {item}
@@ -639,10 +643,10 @@ export default function Footer() {
           <button
             onClick={scrollToTop}
             style={{
-              background: "transparent",
-              border: "1px solid rgba(255, 255, 255, 0.15)",
+              background: "var(--color-white)",
+              border: "1px solid #E4E2DE",
               borderRadius: "var(--radius-full)",
-              color: "var(--color-mid-gray)",
+              color: "var(--color-black)",
               padding: "10px 20px",
               fontSize: "11px",
               fontWeight: 600,
@@ -653,15 +657,14 @@ export default function Footer() {
               gap: "8px",
               cursor: "pointer",
               transition: "all 250ms ease",
+              boxShadow: "var(--shadow-sm)",
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = "var(--color-white)";
-              e.currentTarget.style.color = "var(--color-white)";
+              e.currentTarget.style.borderColor = "var(--color-black)";
               e.currentTarget.style.transform = "translateY(-2px)";
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = "rgba(255, 255, 255, 0.15)";
-              e.currentTarget.style.color = "var(--color-mid-gray)";
+              e.currentTarget.style.borderColor = "#E4E2DE";
               e.currentTarget.style.transform = "translateY(0)";
             }}
           >
