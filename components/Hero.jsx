@@ -68,32 +68,32 @@ export default function Hero() {
         </div>
 
         {/* Portfolio Mockup Cards - Absolute positioned to maintain large size without breaking 100vh */}
-        <div className="absolute bottom-0 right-4 md:right-8 lg:right-12 w-full max-w-[600px] h-[250px] md:h-[400px] pointer-events-none flex justify-end items-end">
-          <div className="relative w-full h-full max-w-[500px]">
+        <div className="absolute bottom-4 right-4 md:bottom-8 md:right-8 lg:right-12 w-full max-w-[800px] h-[200px] md:h-[350px] pointer-events-none flex justify-end items-end">
+          <div className="relative w-full h-full flex justify-end items-end">
             {/* Back Card */}
-            <div className="absolute right-12 md:right-32 bottom-0 md:bottom-8 w-48 md:w-80 h-[90%] md:h-full border-[3px] border-[#111111] rounded-t-lg md:rounded-lg overflow-hidden bg-white shadow-2xl rotate-2 transition-transform hover:rotate-0 hover:z-20 pointer-events-auto">
-              <div className="w-full h-6 md:h-8 border-b-[2px] md:border-b-[3px] border-[#111111] flex items-center px-2 md:px-3 bg-gray-50">
+            <div className="absolute right-12 md:right-32 bottom-4 md:bottom-12 w-64 md:w-[500px] h-36 md:h-[300px] border-[3px] border-[#111111] rounded-t-lg md:rounded-lg overflow-hidden bg-white shadow-2xl rotate-2 transition-transform hover:rotate-0 hover:z-20 pointer-events-auto">
+              <div className="w-full h-5 md:h-8 border-b-[2px] md:border-b-[3px] border-[#111111] flex items-center px-2 md:px-3 bg-gray-50">
                 <div className="flex gap-1 md:gap-1.5">
-                  <div className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-red-400"></div>
-                  <div className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-amber-400"></div>
-                  <div className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-green-400"></div>
+                  <div className="w-1.5 h-1.5 md:w-2.5 md:h-2.5 rounded-full bg-red-400"></div>
+                  <div className="w-1.5 h-1.5 md:w-2.5 md:h-2.5 rounded-full bg-amber-400"></div>
+                  <div className="w-1.5 h-1.5 md:w-2.5 md:h-2.5 rounded-full bg-green-400"></div>
                 </div>
               </div>
-              <div className="relative w-full h-[calc(100%-1.5rem)] md:h-[calc(100%-2rem)]">
+              <div className="relative w-full h-[calc(100%-1.25rem)] md:h-[calc(100%-2rem)]">
                 <Image src="/hero-landscape.jpg" alt="Project 1" fill className="object-cover" />
               </div>
             </div>
 
             {/* Front Card */}
-            <div className="absolute right-0 bottom-0 md:top-0 w-48 md:w-80 h-[95%] md:h-full border-[3px] border-[#111111] rounded-t-lg md:rounded-lg overflow-hidden bg-white shadow-2xl -rotate-2 z-10 transition-transform hover:rotate-0 pointer-events-auto">
-              <div className="w-full h-6 md:h-8 border-b-[2px] md:border-b-[3px] border-[#111111] flex items-center px-2 md:px-3 bg-gray-50">
+            <div className="absolute right-0 bottom-0 w-64 md:w-[500px] h-36 md:h-[300px] border-[3px] border-[#111111] rounded-t-lg md:rounded-lg overflow-hidden bg-white shadow-2xl -rotate-2 z-10 transition-transform hover:rotate-0 pointer-events-auto">
+              <div className="w-full h-5 md:h-8 border-b-[2px] md:border-b-[3px] border-[#111111] flex items-center px-2 md:px-3 bg-gray-50">
                 <div className="flex gap-1 md:gap-1.5">
-                  <div className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-red-400"></div>
-                  <div className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-amber-400"></div>
-                  <div className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-green-400"></div>
+                  <div className="w-1.5 h-1.5 md:w-2.5 md:h-2.5 rounded-full bg-red-400"></div>
+                  <div className="w-1.5 h-1.5 md:w-2.5 md:h-2.5 rounded-full bg-amber-400"></div>
+                  <div className="w-1.5 h-1.5 md:w-2.5 md:h-2.5 rounded-full bg-green-400"></div>
                 </div>
               </div>
-              <div className="relative w-full h-[calc(100%-1.5rem)] md:h-[calc(100%-2rem)]">
+              <div className="relative w-full h-[calc(100%-1.25rem)] md:h-[calc(100%-2rem)]">
                 <Image src="/hero-final.jpg" alt="Project 2" fill className="object-cover" />
               </div>
             </div>
