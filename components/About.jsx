@@ -74,8 +74,8 @@ export default function About() {
                 
                 {/* Row 1, Col 2: Title */}
                 <div>
-                  <h2 className={`${anton.className} text-[96px] leading-[0.9] uppercase text-[#e6e4df] tracking-wide text-center md:text-left`}>
-                    HEY — I'M<br/>VINAY
+                  <h2 className={`${anton.className} text-[80px] md:text-[96px] leading-[0.9] uppercase text-[#e6e4df] tracking-wide text-center md:text-left`}>
+                    HEY — <br className="md:hidden" />I'M<br/>VINAY
                   </h2>
                 </div>
 
@@ -107,7 +107,7 @@ export default function About() {
 
       {/* Seamless Continuing Black Section for Skills */}
       <div className="w-full bg-[#111111] relative z-20">
-        <div className="w-full max-w-[1000px] mx-auto px-6 md:px-12 py-24 md:py-32">
+        <div className="w-full max-w-[1000px] mx-auto px-6 md:px-12 pt-24 md:pt-32 pb-[20vh] md:pb-[35vh]">
           <h3 className={`${anton.className} text-[60px] font-bold text-white mb-10 tracking-wide uppercase`}>
             Skills
           </h3>

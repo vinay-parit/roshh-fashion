@@ -2,6 +2,8 @@ import Hero from "@/components/Hero";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import About from "@/components/About";
+import Cta from "@/components/Cta";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -11,6 +13,8 @@ export default function Home() {
         <Experience />
         <Projects />
         <About />
+        <Cta />
+        <Footer />
       </main>
     </div>
   );

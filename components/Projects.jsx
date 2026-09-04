@@ -55,35 +55,69 @@ export default function Projects() {
         {/* Projects List */}
         <div className="flex flex-col border-t border-black/10 mt-8">
           {projects.map((project, index) => (
-            <div
+            <div 
               key={index}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
-              className="group relative flex flex-col md:flex-row items-start md:items-center justify-between border-b border-black/10 py-6 md:py-8 px-6 lg:px-10 cursor-pointer transition-all duration-500 hover:bg-[#111111] hover:text-[#e6e4df] hover:border-transparent hover:rounded-2xl hover:shadow-2xl"
+              className="group relative cursor-pointer"
             >
-              {/* Left Text */}
-              <div className="w-full md:w-[20%] mb-4 md:mb-0 relative z-10">
-                <span className="font-mono text-sm tracking-widest uppercase text-gray-500 group-hover:text-gray-400 transition-colors">
+              {/* === DESKTOP LAYOUT (Hidden on mobile) === */}
+              <div className="hidden md:flex flex-row items-center justify-between border-b border-black/10 py-8 px-6 lg:px-10 transition-all duration-500 hover:bg-[#111111] hover:text-[#e6e4df] hover:border-transparent hover:rounded-2xl hover:shadow-2xl">
+                {/* Left Text */}
+                <div className="w-[20%] relative z-10">
+                  <span className="font-mono text-sm tracking-widest uppercase text-gray-500 group-hover:text-gray-400 transition-colors">
+                    {project.year}, {project.category}
+                  </span>
+                </div>
+
+                {/* Hover Image Preview */}
+                <div className="absolute left-[20%] top-1/2 -translate-y-1/2 w-36 h-20 lg:w-44 lg:h-24 rounded-xl overflow-hidden opacity-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 pointer-events-none z-10 shadow-lg">
+                  <Image src={project.image} alt={project.title} fill className="object-cover" />
+                </div>
+
+                {/* Center Title */}
+                <div className="w-[70%] relative z-10 flex items-center group-hover:pl-[240px] lg:group-hover:pl-[260px] transition-all duration-500">
+                  <h3 className={`${anton.className} text-[60px] leading-none uppercase tracking-wide`}>
+                    {project.title}
+                  </h3>
+                </div>
+
+                {/* Right Arrow */}
+                <div className="w-[10%] flex justify-end relative z-10">
+                  <div className="text-black group-hover:text-white transition-colors">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                  </div>
+                </div>
+              </div>
+
+              {/* === MOBILE LAYOUT (Hidden on desktop) === */}
+              <div className="flex md:hidden flex-col gap-6 py-8 border-b border-black/10">
+                {/* Top Row: Title & Arrow */}
+                <div className="flex justify-between items-start gap-4">
+                  <h3 className={`${anton.className} text-[40px] leading-[0.9] uppercase tracking-wide text-[#111111]`}>
+                    {project.title}
+                  </h3>
+                  <div className="text-black mt-2 shrink-0">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                  </div>
+                </div>
+                
+                {/* Middle: Always visible Image */}
+                <div className="w-full aspect-[4/3] relative rounded-xl overflow-hidden">
+                  <Image src={project.image} alt={project.title} fill className="object-cover" />
+                  
+                  {/* Live Website Button */}
+                  <div className="absolute top-3 right-3 bg-[#e6e4df]/90 backdrop-blur-md px-3 py-1.5 rounded-sm flex items-center gap-1.5 shadow-md">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#111111" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                    <span className="font-bold text-[10px] uppercase tracking-wider text-[#111111]">
+                      Live Website
+                    </span>
+                  </div>
+                </div>
+
+                {/* Bottom: Year and Category */}
+                <div className="font-mono text-sm tracking-widest uppercase text-gray-700 font-medium">
                   {project.year}, {project.category}
-                </span>
-              </div>
-
-              {/* Hover Image Preview (Absolute but aligned between columns) */}
-              <div className="absolute left-[20%] top-1/2 -translate-y-1/2 w-28 h-16 md:w-36 md:h-20 lg:w-44 lg:h-24 rounded-xl overflow-hidden opacity-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 pointer-events-none z-10 hidden md:block shadow-lg">
-                <Image src={project.image} alt={project.title} fill className="object-cover" />
-              </div>
-
-              {/* Center Title */}
-              <div className="w-full md:w-[70%] relative z-10 flex items-center pl-0 md:group-hover:pl-[240px] lg:group-hover:pl-[260px] transition-all duration-500">
-                <h3 className={`${anton.className} text-[40px] md:text-[60px] leading-none uppercase tracking-wide`}>
-                  {project.title}
-                </h3>
-              </div>
-
-              {/* Right Arrow */}
-              <div className="w-full md:w-[10%] flex justify-end mt-4 md:mt-0 relative z-10">
-                <div className="text-black group-hover:text-white transition-colors">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
                 </div>
               </div>
             </div>
