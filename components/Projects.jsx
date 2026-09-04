@@ -41,7 +41,7 @@ export default function Projects() {
         
         {/* Top Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end border-b border-black/10 pb-8 md:pb-12 gap-8">
-          <h2 className={`${anton.className} text-[12vw] md:text-[8vw] lg:text-[7rem] leading-none tracking-tight uppercase`}>
+          <h2 className={`${anton.className} text-[96px] leading-none tracking-tight uppercase`}>
             Projects
           </h2>
           <div className="flex items-start gap-4 max-w-sm mb-2">
