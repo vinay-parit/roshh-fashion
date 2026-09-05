@@ -15,9 +15,11 @@ const inter = Inter({
 export default function Cta() {
   return (
     <section className="w-full bg-[#e6e4df] pt-12 md:pt-20 pb-0 px-4 md:px-8">
-      <div className="max-w-[1400px] mx-auto bg-[#F54B25] rounded-[24px] md:rounded-[32px] flex flex-col items-center justify-center py-16 md:py-24 px-6 text-center shadow-xl relative overflow-hidden">
+      <div className="max-w-[1400px] mx-auto bg-[#111111] rounded-[24px] md:rounded-[32px] flex flex-col items-center justify-center py-16 md:py-24 px-6 text-center shadow-xl relative overflow-hidden">
         
-        <p className={`${inter.className} text-[#e6e4df]/80 text-lg md:text-xl mb-6 md:mb-8 tracking-wide`}>
+        {/* Subtle noise texture could go here if needed, keeping it solid #111111 for now to match exactly */}
+        
+        <p className={`${inter.className} text-gray-400 text-lg md:text-xl mb-6 md:mb-8 tracking-wide`}>
           Let's talk!
         </p>
         
