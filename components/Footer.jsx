@@ -6,7 +6,7 @@ const inter = Inter({
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#F54B25] px-6 md:px-12 pt-8 md:pt-14 pb-4 md:pb-6 text-[#111111] relative z-20">
+    <footer className="w-full bg-[#e6e4df] px-6 md:px-12 pt-8 md:pt-14 pb-4 md:pb-6 text-[#111111] relative z-20">
       <div className="max-w-[1400px] mx-auto">
         
         {/* Main Grid Content (6-3-3 layout) with segmented top borders */}
@@ -25,7 +25,7 @@ export default function Footer() {
 
           {/* Column 2: Navigation Links (Takes 25% on desktop) */}
           <div className="md:col-span-3 border-t border-black/15 pt-8">
-            <ul className={`${inter.className} flex flex-col gap-3 text-[15px] text-gray-800 font-medium`}>
+            <ul className={`${inter.className} flex flex-col gap-3 text-[15px] text-gray-700`}>
               <li><a href="#" className="hover:text-black transition-colors">Home</a></li>
               <li><a href="#" className="hover:text-black transition-colors">Projects</a></li>
               <li><a href="#" className="hover:text-black transition-colors">About me</a></li>
@@ -35,7 +35,7 @@ export default function Footer() {
 
           {/* Column 3: Socials (Takes 25% on desktop) */}
           <div className="md:col-span-3 border-t border-black/15 pt-8">
-            <ul className={`${inter.className} flex flex-col gap-3 text-[15px] text-gray-800 font-medium`}>
+            <ul className={`${inter.className} flex flex-col gap-3 text-[15px] text-gray-700`}>
               <li><a href="#" className="hover:text-black transition-colors">Instagram</a></li>
               <li><a href="#" className="hover:text-black transition-colors">LinkedIn</a></li>
               <li><a href="#" className="hover:text-black transition-colors">Awwwards</a></li>
@@ -52,8 +52,8 @@ export default function Footer() {
           
           {/* Copyright */}
           <div className="md:col-span-6">
-            <p className={`${inter.className} text-[13px] md:text-[14px] text-black/70`}>
-              © 2026 | <span className="text-black font-semibold">Vinay Parit</span>
+            <p className={`${inter.className} text-[13px] md:text-[14px] text-gray-600`}>
+              © 2026 | <span className="text-[#f15a29] font-medium">Vinay Parit</span>
             </p>
           </div>
 
