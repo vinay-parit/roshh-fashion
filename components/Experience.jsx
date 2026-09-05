@@ -31,7 +31,7 @@ export default function Experience() {
         <div className="flex flex-col w-full relative">
           
           {/* Experience Item 1 */}
-          <div className="sticky top-[10vh] md:top-[12vh] z-[1] bg-[#111111] border-b border-[#333] group hover:bg-[#1a1a1a] transition-colors -mx-4 px-4 md:-mx-8 md:px-8 lg:-mx-12 lg:px-12 cursor-pointer shadow-[0_-10px_30px_rgba(17,17,17,1)] h-[112vh] md:h-[115vh]">
+          <div className="sticky top-[10vh] md:top-[12vh] z-[1] bg-[#111111] border-b border-[#333] group -mx-4 px-4 md:-mx-8 md:px-8 lg:-mx-12 lg:px-12 cursor-pointer shadow-[0_-10px_30px_rgba(17,17,17,1)] h-[112vh] md:h-[115vh]">
             <motion.div 
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -61,7 +61,7 @@ export default function Experience() {
           </div>
 
           {/* Experience Item 2 */}
-          <div className="sticky top-[19vh] md:top-[22vh] z-[2] bg-[#111111] border-b border-[#333] group hover:bg-[#1a1a1a] transition-colors -mx-4 px-4 md:-mx-8 md:px-8 lg:-mx-12 lg:px-12 cursor-pointer shadow-[0_-10px_30px_rgba(17,17,17,1)] h-[103vh] md:h-[105vh]">
+          <div className="sticky top-[19vh] md:top-[22vh] z-[2] bg-[#111111] border-b border-[#333] group -mx-4 px-4 md:-mx-8 md:px-8 lg:-mx-12 lg:px-12 cursor-pointer shadow-[0_-10px_30px_rgba(17,17,17,1)] h-[103vh] md:h-[105vh]">
             <motion.div 
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -91,7 +91,7 @@ export default function Experience() {
           </div>
 
           {/* Experience Item 3 */}
-          <div className="sticky top-[28vh] md:top-[32vh] z-[3] bg-[#111111] border-b border-[#333] group hover:bg-[#1a1a1a] transition-colors -mx-4 px-4 md:-mx-8 md:px-8 lg:-mx-12 lg:px-12 cursor-pointer shadow-[0_-10px_30px_rgba(17,17,17,1)] h-[94vh] md:h-[95vh]">
+          <div className="sticky top-[28vh] md:top-[32vh] z-[3] bg-[#111111] border-b border-[#333] group -mx-4 px-4 md:-mx-8 md:px-8 lg:-mx-12 lg:px-12 cursor-pointer shadow-[0_-10px_30px_rgba(17,17,17,1)] h-[94vh] md:h-[95vh]">
             <motion.div 
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -121,7 +121,7 @@ export default function Experience() {
           </div>
 
           {/* Experience Item 4 */}
-          <div className="sticky top-[37vh] md:top-[42vh] z-[4] bg-[#111111] border-b border-[#333] group hover:bg-[#1a1a1a] transition-colors -mx-4 px-4 md:-mx-8 md:px-8 lg:-mx-12 lg:px-12 cursor-pointer shadow-[0_-10px_30px_rgba(17,17,17,1)] h-[85vh]">
+          <div className="sticky top-[37vh] md:top-[42vh] z-[4] bg-[#111111] border-b border-[#333] group -mx-4 px-4 md:-mx-8 md:px-8 lg:-mx-12 lg:px-12 cursor-pointer shadow-[0_-10px_30px_rgba(17,17,17,1)] h-[85vh]">
             <motion.div 
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
