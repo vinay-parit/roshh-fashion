@@ -40,13 +40,13 @@ export default function Experience() {
               className="relative flex pt-6 pb-24 md:pt-8 md:pb-32 items-start justify-center h-full"
             >
               {/* Number - Absolute Left */}
-              <span className={`${anton.className} absolute left-4 md:left-12 top-6 md:top-8 text-4xl md:text-6xl text-gray-600 group-hover:text-[#F54B25] transition-colors`}>01.</span>
+              <span className={`${anton.className} absolute left-4 md:left-12 top-6 md:top-8 text-4xl md:text-6xl text-gray-600 group-hover:text-[#fcd34d] transition-colors`}>01.</span>
               
               {/* Centered Content Block */}
               <div className="flex flex-col gap-6 w-full max-w-2xl mx-auto items-start text-left relative z-10 px-0 md:px-0">
                 <div className="flex flex-col gap-2 md:gap-3">
                   <h3 className={`${anton.className} text-4xl md:text-6xl tracking-wide uppercase`}>1% Club</h3>
-                  <h4 className="text-sm md:text-base tracking-widest text-[#F54B25] font-bold uppercase">LEAD VISUAL DESIGNER</h4>
+                  <h4 className="text-sm md:text-base tracking-widest text-[#fcd34d] font-bold uppercase">LEAD VISUAL DESIGNER</h4>
                 </div>
                 <p className="w-full text-gray-400 text-[20px] font-normal leading-relaxed mt-4">
                   Designed intuitive web, mobile, and finance product experiences from wireframes to polished user interfaces. Built and maintained scalable Figma design systems while collaborating with cross-functional teams. Created high-impact marketing assets and landing pages that aligned user needs with business and brand goals.
@@ -54,7 +54,7 @@ export default function Experience() {
               </div>
               
               {/* Arrow - Absolute Right */}
-              <div className="hidden md:flex absolute right-12 top-6 md:top-8 w-12 h-12 rounded-full border border-[#333] items-center justify-center group-hover:border-[#F54B25] group-hover:text-[#F54B25] transition-colors">
+              <div className="hidden md:flex absolute right-12 top-6 md:top-8 w-12 h-12 rounded-full border border-[#333] items-center justify-center group-hover:border-[#fcd34d] group-hover:text-[#fcd34d] transition-colors">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
               </div>
             </motion.div>
@@ -70,13 +70,13 @@ export default function Experience() {
               className="relative flex pt-6 pb-24 md:pt-8 md:pb-32 items-start justify-center h-full"
             >
               {/* Number - Absolute Left */}
-              <span className={`${anton.className} absolute left-4 md:left-12 top-6 md:top-8 text-4xl md:text-6xl text-gray-600 group-hover:text-[#F54B25] transition-colors`}>02.</span>
+              <span className={`${anton.className} absolute left-4 md:left-12 top-6 md:top-8 text-4xl md:text-6xl text-gray-600 group-hover:text-[#fcd34d] transition-colors`}>02.</span>
               
               {/* Centered Content Block */}
               <div className="flex flex-col gap-6 w-full max-w-2xl mx-auto items-start text-left relative z-10 px-0 md:px-0">
                 <div className="flex flex-col gap-2 md:gap-3">
                   <h3 className={`${anton.className} text-4xl md:text-6xl tracking-wide uppercase`}>Saleshandy</h3>
-                  <h4 className="text-sm md:text-base tracking-widest text-[#F54B25] font-bold uppercase">DESIGN FREELANCER</h4>
+                  <h4 className="text-sm md:text-base tracking-widest text-[#fcd34d] font-bold uppercase">DESIGN FREELANCER</h4>
                 </div>
                 <p className="w-full text-gray-400 text-[20px] font-normal leading-relaxed mt-4">
                   Created icons, banners, web graphics, and social media creatives aligned with the brand identity. Designed scalable UI elements and micro-illustrations for intuitive product experiences. Collaborated with cross-functional teams to deliver consistent designs across digital platforms.
@@ -84,7 +84,7 @@ export default function Experience() {
               </div>
               
               {/* Arrow - Absolute Right */}
-              <div className="hidden md:flex absolute right-12 top-6 md:top-8 w-12 h-12 rounded-full border border-[#333] items-center justify-center group-hover:border-[#F54B25] group-hover:text-[#F54B25] transition-colors">
+              <div className="hidden md:flex absolute right-12 top-6 md:top-8 w-12 h-12 rounded-full border border-[#333] items-center justify-center group-hover:border-[#fcd34d] group-hover:text-[#fcd34d] transition-colors">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
               </div>
             </motion.div>
@@ -100,13 +100,13 @@ export default function Experience() {
               className="relative flex pt-6 pb-24 md:pt-8 md:pb-32 items-start justify-center h-full"
             >
               {/* Number - Absolute Left */}
-              <span className={`${anton.className} absolute left-4 md:left-12 top-6 md:top-8 text-4xl md:text-6xl text-gray-600 group-hover:text-[#F54B25] transition-colors`}>03.</span>
+              <span className={`${anton.className} absolute left-4 md:left-12 top-6 md:top-8 text-4xl md:text-6xl text-gray-600 group-hover:text-[#fcd34d] transition-colors`}>03.</span>
               
               {/* Centered Content Block */}
               <div className="flex flex-col gap-6 w-full max-w-2xl mx-auto items-start text-left relative z-10 px-0 md:px-0">
                 <div className="flex flex-col gap-2 md:gap-3">
                   <h3 className={`${anton.className} text-4xl md:text-6xl tracking-wide uppercase`}>Unacademy</h3>
-                  <h4 className="text-sm md:text-base tracking-widest text-[#F54B25] font-bold uppercase">CREATIVE DESIGNER</h4>
+                  <h4 className="text-sm md:text-base tracking-widest text-[#fcd34d] font-bold uppercase">CREATIVE DESIGNER</h4>
                 </div>
                 <p className="w-full text-gray-400 text-[20px] font-normal leading-relaxed mt-4">
                   Designed marketing creatives, banners, thumbnails, illustrations, icons, and UI assets across digital platforms. Collaborated with cross-functional teams while ensuring consistency with Unacademy’s brand guidelines. Contributed to NextLevel by Unacademy, designing product UI, onboarding flows, and marketing visuals.
@@ -114,7 +114,7 @@ export default function Experience() {
               </div>
               
               {/* Arrow - Absolute Right */}
-              <div className="hidden md:flex absolute right-12 top-6 md:top-8 w-12 h-12 rounded-full border border-[#333] items-center justify-center group-hover:border-[#F54B25] group-hover:text-[#F54B25] transition-colors">
+              <div className="hidden md:flex absolute right-12 top-6 md:top-8 w-12 h-12 rounded-full border border-[#333] items-center justify-center group-hover:border-[#fcd34d] group-hover:text-[#fcd34d] transition-colors">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
               </div>
             </motion.div>
@@ -130,13 +130,13 @@ export default function Experience() {
               className="relative flex pt-6 pb-24 md:pt-8 md:pb-32 items-start justify-center h-full"
             >
               {/* Number - Absolute Left */}
-              <span className={`${anton.className} absolute left-4 md:left-12 top-6 md:top-8 text-4xl md:text-6xl text-gray-600 group-hover:text-[#F54B25] transition-colors`}>04.</span>
+              <span className={`${anton.className} absolute left-4 md:left-12 top-6 md:top-8 text-4xl md:text-6xl text-gray-600 group-hover:text-[#fcd34d] transition-colors`}>04.</span>
               
               {/* Centered Content Block */}
               <div className="flex flex-col gap-6 w-full max-w-2xl mx-auto items-start text-left relative z-10 px-0 md:px-0">
                 <div className="flex flex-col gap-2 md:gap-3">
                   <h3 className={`${anton.className} text-4xl md:text-6xl tracking-wide uppercase`}>Boult Audio</h3>
-                  <h4 className="text-sm md:text-base tracking-widest text-[#F54B25] font-bold uppercase">DESIGN INTERN</h4>
+                  <h4 className="text-sm md:text-base tracking-widest text-[#fcd34d] font-bold uppercase">DESIGN INTERN</h4>
                 </div>
                 <p className="w-full text-gray-400 text-[20px] font-normal leading-relaxed mt-4">
                   Collaborated with cross-functional teams to create campaigns aligned with brand and business goals. Designed visually engaging creatives while maintaining consistency across digital and marketing assets. Generated creative concepts and product advertisements that strengthened brand identity and supported sales.
@@ -144,7 +144,7 @@ export default function Experience() {
               </div>
               
               {/* Arrow - Absolute Right */}
-              <div className="hidden md:flex absolute right-12 top-6 md:top-8 w-12 h-12 rounded-full border border-[#333] items-center justify-center group-hover:border-[#F54B25] group-hover:text-[#F54B25] transition-colors">
+              <div className="hidden md:flex absolute right-12 top-6 md:top-8 w-12 h-12 rounded-full border border-[#333] items-center justify-center group-hover:border-[#fcd34d] group-hover:text-[#fcd34d] transition-colors">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
               </div>
             </motion.div>
